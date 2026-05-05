@@ -19,7 +19,7 @@
         <p style="font-size: 50px; text-align: center;">Bem-Vindo!</p>
     </div>
     <div class="conteudo">
-        <form>
+        <form onsubmit="mudarTelas(event)">
             <label for="name">Nome:</label> <br>
             <input class="input" type="text" id="name" name="name" placeholder="Ex: Maria Silva" required><br><br>
 
@@ -48,8 +48,8 @@
                     Tenho alguma doença pré-existente
                 </label>
                 <br><br><br>
-                <!-- PRINCIPAIS MUDANÇAS (removi a tag <button> e coloquei a <a>, adicionei JavaScript e atribui uma classe CSS a tag <a>) -->
-                <a class="botao" id="link" onclick="mudarTelas()">Cadastrar-se</a>
+                    <button id="link" class="input-button" type="submit">Cadastrar</button>
+                
         </form>
     </div>
 
