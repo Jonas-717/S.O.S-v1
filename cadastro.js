@@ -1,11 +1,12 @@
-let link = document.getElementById("link")
-let doencaPreExistente = document.getElementById("checkbox")
+let link = document.getElementById("link")  //Variavel do button
+let doencaPreExistente = document.getElementById("checkbox") //Variavel do checkbox
 
-function mudarTelas() {
-    if (doencaPreExistente.checked) {
-        link.setAttribute("href", "preexistente.html")
-    }
-    else {
-        link.setAttribute("href", "login.html")
-    }
+function mudarTelas(event) {
+  event.preventDefault();
+
+  if (doencaPreExistente.checked) {
+    window.location.href = "registro(pre).html";
+  } else {
+    window.location.href = "login.html";
+  }
 }
